@@ -1,5 +1,0 @@
-I":(function() {
-  $(document).on("a");
-
-}).call(this);
-:ET
