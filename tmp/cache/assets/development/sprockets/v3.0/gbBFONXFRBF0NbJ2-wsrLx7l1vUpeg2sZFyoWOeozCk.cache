@@ -1,0 +1,9 @@
+I"U(function() {
+  $(document).on("ajax:success", "form#comments-form", function(ev, data) {
+    console.log(data);
+    $(this).find("textarea").val("");
+    return $("#comments-box").append(" <div class='card grey lighten-4' id='comments-box'> <div class='card-content'> " + data.body + "<br> <hr> " + " </div> </div>");
+  });
+
+}).call(this);
+:ET

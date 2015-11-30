@@ -1,0 +1,42 @@
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="card teal lighten-5">
+				<h4 class="card-content center-align">¡Registrate!</h4>
+			</div>	
+		</div>    
+	</div>
+
+	<div class="col s12">
+		<div class="card grey lighten-4">
+			<div class="card-content no-top">
+				<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+				<%= devise_error_messages! %>
+
+				<div class="input-field no-top">
+					<%= f.label :email %><br />
+					<%= f.email_field :email %>
+				</div>
+
+				<div class="input-field">
+					<%= f.label :password, "Contraseña" %>
+					<% if @minimum_password_length %>
+					<em>(<%= @minimum_password_length %> characters minimum)</em>
+					<% end %><br />
+					<%= f.password_field :password, autocomplete: "on" %>
+				</div>
+
+				<div class="input-field">
+					<%= f.label :password_confirmation, "Confirmar Contraseña" %><br />
+					<%= f.password_field :password_confirmation, autocomplete: "on" %>
+				</div>
+				<br>
+				<div class="actions center-align ">
+					<%= f.submit "¡Registrarse!", class:"btn btn-waves teal f-black" %>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+

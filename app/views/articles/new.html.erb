@@ -1,0 +1,13 @@
+<div class="container top-space">
+
+		<% @article.errors.full_messages.each do |message| %>
+			<div class="chip red"><i class="material-icons left">error_outline</i> <%= message %></div>	
+		<% end %>
+
+	<div class="card-panel">
+		<h4 class="no-top bold">Crear Artículo</h4>
+		<div class="top-mini">	
+			<%= render "form" %>	
+		</div>
+	</div>
+</div>

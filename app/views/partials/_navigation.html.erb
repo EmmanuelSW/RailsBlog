@@ -1,0 +1,40 @@
+<nav>
+	<div class="nav-wrapper teal">
+		<%= image_tag("logo.png", :class => "logo") %>
+		<a href="#" class="brand-logo f-black l-padding">EmmanuelSW</a>
+		<a data-activates="mobile-demo" class="l-padding f-black button-collapse">
+			<i class="material-icons">menu</i>
+		</a>
+
+		<ul class="right hide-on-med-and-down">
+			<li><%= link_to("Inicio", root_path, :class => "f-black") %></li>
+			<li><a class="f-black" href="#">Servicios</a></li>
+			<li><a class="f-black" href="#">Acerca de</a></li>
+			<li><a class="f-black" href="#">Contacto</a></li>
+
+			<% if user_signed_in? %>
+				<li><%= link_to("Blog", articles_path, :class => "f-black") %></li>
+				<li><%= link_to("Cerrar Sesión", destroy_user_session_path, method: :delete, class:"f-black") %></li>
+			<% else %>
+				<li><%= link_to("Iniciar Sesión", new_user_session_path , class:"f-black") %></li>
+				<li><%= link_to("¡Registrate!", new_user_registration_path , class:"f-black") %></li>
+			<% end %>
+		</ul>
+
+		<ul class="side-nav" id="mobile-demo">
+			<li><%= link_to("Inicio", root_path, :class => "f-black") %></li>
+			<li><a class="f-black" href="#">Servicios</a></li>
+			<li><a class="f-black" href="#">Blog</a></li>
+			<li><a class="f-black" href="#">Acerca de</a></li>
+			<li><a class="f-black" href="#">Contacto</a></li>
+			<% if user_signed_in? %>
+				<li><%= link_to("Blog", articles_path, :class => "f-black") %></li>
+				<li><%= link_to("Cerrar Sesión", destroy_user_session_path, method: :delete, class:"f-black") %></li>
+			<% else %>
+				<li><%= link_to("Iniciar Sesión", new_user_session_path , class:"f-black") %></li>
+				<li><%= link_to("¡Registrate!", new_user_registration_path , class:"f-black") %></li>
+			<% end %>
+		</ul>
+		
+	</div>
+</nav>

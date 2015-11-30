@@ -1,0 +1,85 @@
+html,body {
+	font-family: 'Fira Sans', sans-serif !important; 
+}
+
+.l-padding {
+	padding-left: 10px !important;
+}
+
+.f-black {
+	color: #212121 !important;
+}
+
+
+nav ul li { 
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+nav ul li a { 
+	font-size: 1.1rem !important;
+}
+
+nav .brand-logo {
+	font-size: 2.2rem !important;
+}
+
+.logo {
+	height: 50px;
+	margin-top: 7px;
+	margin-left: 7px;
+}
+
+.top-space {
+	padding-top: 20px !important;
+}
+
+.no-top {
+	margin-top: 0px !important;
+}
+.top-mini {
+	padding-top: 5px !important;
+}
+
+h4 {
+	font-size: 1.9rem !important;
+}
+
+.input-field label {
+	left: 0rem !important;
+}
+
+.chip i.material-icons {
+	padding-left: 0px !important;
+}
+
+i.material-icons.left {
+	margin-right: 5px !important;
+}
+
+.chip {
+	margin-bottom: 10px;
+}
+
+.fixed-btn{
+	position: fixed;
+	bottom: 0;
+	right:0;
+	padding-right:50px;
+	padding-bottom:50px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: #F5F5F5 !important; 
+}
+
+.no-right {
+	margin-right: 0px !important;
+}
+
+.card .card-image img{
+	height: 300px !important;
+}
+
+
+
