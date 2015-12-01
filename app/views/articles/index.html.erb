@@ -3,7 +3,7 @@
 		<div class="col s12">
 			<div class="card teal lighten-5">
 				<h4 class="card-content center-align">Listado de articulos</h4>
-			</div>		
+			</div>
 		</div>
 		<% @articles.each do |article| %>
 			<div class="col s12 m6">
@@ -17,8 +17,8 @@
 					</div>
 					<div class="card-action">
 						<%= link_to("Ver mas", article, class:"btn waves-effect waves-light teal lighten-2 f-black") %>
-						<a class="btn waves-effect waves-light light-blue f-black" href="#">Visitas: <%= article.visits_count %></a>
-						<a class="btn waves-effect waves-light f-black no-right" href="#">Comentarios: <%= article.comments.count %></a>
+						<a class="btn waves-effect waves-light light-blue f-black"><i class="material-icons left">visibility</i><%= article.visits_count %></a>
+						<a class="btn waves-effect waves-light f-black"><i class="material-icons left">message</i><%= article.comments.count %> </a>
 					</div>
 				</div>
 			</div>
