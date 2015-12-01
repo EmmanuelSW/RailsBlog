@@ -20,6 +20,13 @@
       	</div>
     </div>
 
+    <% @categories.each do |category| %>
+    	<p>
+			<input type="checkbox" name="categories[]" id="<%= category.id %>" value="<%= category.id %>">
+			<label for="<%= category.id %>"><%= category.name %></label>
+		</p>
+	<% end %>
+
 	<div class="input-field">
 		<button class="btn waves-effect waves-light f-black" type="submit">GUARDAR
 			<i class="material-icons right">send</i>
